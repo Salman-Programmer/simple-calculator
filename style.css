@@ -1,0 +1,79 @@
+body {
+    background-color: #00adff14;
+}
+
+.calculator {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #1d1d1d;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px rgb(3 2 3 / 25%);
+    padding: 10px;
+}
+
+.display {
+    background-color: #282828;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.display input[type="text"] {
+    font-size: 36px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    width: 95%;
+    text-align: right;
+    padding: 10px;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #303030;
+}
+
+button:active {
+    background-color: #1d1d1d;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btnClear {
+    background-color: #e74c3c;
+    grid-column: 1 / span 2;
+}
+
+.btnBackspace {
+    background-color: #f1c40f;
+}
+
+.btnEqual {
+    background-color: #2ecc71;
+    grid-column: 1 / span 2;
+}
+
+.btnOpeartor {
+    background-color: #3498db;
+}
